@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background: #000;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.div-1 {
+  display: flex;
+}
+picture {
+  margin: 15px 25px;
+}
+.div-2 {
+  display: none;
+}
+.div-p {
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.div-p p:last-child {
+  font-weight: bold;
+}
+nav {
+  display: flex;
+  font-size: 13px;
+  align-items: center;
+  gap: 16px;
+  margin-right: 25px;
+}
+
+.btn-cotiza {
+  border: 1px solid #707070;
+  border-radius: 6px;
+  background: #8bc540;
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 990px) {
+  nav {
+    display: none;
+  }
+  .div-2 {
+    display: inline;
+  }
+}
+@media (max-width: 768px) {
+  .div-p {
+    display: none;
+  }
+}
