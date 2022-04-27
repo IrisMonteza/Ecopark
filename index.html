@@ -10,10 +10,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css"
+    />
   </head>
   <body>
     <header>
-      <div class="div-1">
+      <div class="div__logo">
         <picture>
           <source
             srcset="assets/images_ecopark/logo.svg"
@@ -25,12 +29,12 @@
           />
           <img src="assets/images_ecopark/logo.svg" alt="" />
         </picture>
-        <div class="div-p">
+        <div class="div__texto">
           <p>BODEGA + OFICINA PREMIUM + SHOWROOM</p>
           <p>TODO EN UN SOLO LUGAR</p>
         </div>
       </div>
-      <div class="div-2">
+      <div class="div__menu">
         <nav role="navigation">
           <div id="menuToggle">
             <input type="checkbox" />
@@ -40,23 +44,211 @@
             <span></span>
 
             <ul id="menu">
-              <a href="#"><li>PROYECTO</li></a>
-              <a href="#"><li>SEGURIDAD</li></a>
-              <a href="#"><li>PLANTAS</li></a>
-              <a href="#"><li>UBICACIÓN</li></a>
-              <a href="#" class="btn-cotiza">COTIZA AQUÍ</a>
+              <a class="menu__servicios" href="#"><li>PROYECTO</li></a>
+              <a class="menu__servicios" href="#"><li>SEGURIDAD</li></a>
+              <a class="menu__servicios" href="#"><li>PLANTAS</li></a>
+              <a class="menu__servicios" href="#"><li>UBICACIÓN</li></a>
+              <a class="menu__servicios" href="#" class="btn-cotiza"
+                >COTIZA AQUÍ</a
+              >
             </ul>
           </div>
         </nav>
       </div>
       <nav class="header__menu">
-        <a href="#">PROYECTO</a>
-        <a href="#">SEGURIDAD</a>
-        <a href="#">PLANTAS</a>
-        <a href="#">UBICACIÓN</a>
+        <a class="servicios" href="#">PROYECTO</a>
+        <a class="servicios" href="#">SEGURIDAD</a>
+        <a class="servicios" href="#">PLANTAS</a>
+        <a class="servicios" href="#">UBICACIÓN</a>
         <a href="#" class="btn-cotiza">COTIZA AQUÍ</a>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div id="app">
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div
+              class="swiper-slide"
+              style="background-image: url(/assets/images_ecopark/slide1.jpg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(/assets/images_ecopark/slide2.jpg)"
+            ></div>
+            <div
+              class="swiper-slide"
+              style="background-image: url(/assets/images_ecopark/slide3.jpg)"
+            ></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+      </div>
+      <section class="caracteristicas">
+        <div class="div__caracteristicas">
+          <div class="caracteristica__item">
+            <img src="assets/images_ecopark/ic-f1.svg" alt="" />
+            <h3>
+              UBICACIÓN <br />
+              PRIVILEGIADA
+            </h3>
+            <p>
+              Con acceso inmediato a autopistas, camino al aeropuerto,
+              importantes áreas comerciales e industriales. Hazlo todo en un
+              solo viaje a tu nueva oficina-showroom-bodega.
+            </p>
+          </div>
+          <div class="caracteristica__item">
+            <img src="assets/images_ecopark/ic-f2.svg" alt="" />
+            <h3>
+              SEGURIDAD DE <br />
+              ALTO NIVEL
+            </h3>
+            <p>
+              Contamos con un sistema de vigilancia cerrado de última
+              generación, control de acceso, cerco eléctrico, monitoreo en línea
+              y un sistema antialunijaze para darte la tranquilidad de que
+              necesitas.
+            </p>
+          </div>
+          <div class="caracteristica__item">
+            <img src="assets/images_ecopark/ic-f3.svg" alt="" />
+            <h3>
+              ARQUITECTURA <br />
+              VANGUARDISTA
+            </h3>
+            <p>
+              Galpones diseñados para optimizar todos tus espacios aprovechando
+              cada centímetro, con oficinas habilitadas para comenzar a operar
+              en el momento que estés listo.
+            </p>
+          </div>
+        </div>
+        <div class="div__cotiza">
+          <h1>ARRIENDO DE BODEGAS</h1>
+          <h2>DESDE 350 A 490 M2</h2>
+          <form class="form__cotiza" action="">
+            <div class="form__group">
+              <label for="nombre"> Nombre y Apellido</label>
+              <input type="text" required name="nombre" />
+            </div>
+            <div class="form__group">
+              <label for="email"> Email</label>
+              <input type="email" required id="email" name="email" />
+            </div>
+            <div class="form__group">
+              <label for="nomEmpresa">Nombre de Empresa</label>
+              <input type="text" required id="nomEmpresa" name="nomEmpresa" />
+            </div>
+            <div class="form__group">
+              <label for="telefono">Telefono</label>
+              <input type="text" required id="telefono" name="telefono" />
+            </div>
+            <div class="form__group">
+              <label for="bodega"> Selecciona Bodega</label>
+              <select name="bodega" id="bodega">
+                <option value="bodega1">Bodega 1</option>
+                <option value="bodega246">Bodega 2, 4 y 6</option>
+                <option value="bodega35">Bodega 3 y 5</option>
+                <option value="bodega7">Bodega 7</option>
+              </select>
+            </div>
+            <a href="#" class="btn-cotiza">COTIZA AQUÍ</a>
+          </form>
+        </div>
+      </section>
+      <section>
+        <p>
+          Necesitas una oficina, un showroom y una bodega para tu negocio. Todo
+          eso EcoparkCenter lo tiene en un solo lugar para que comiences ahora
+          mismo. Un espacio privado con las ventajas y seguridad de una gran
+          empresa que se ajusta a lo que necesites.
+        </p>
+        <!-- <img src="assets/images_ecopark/ser1.png" alt="" /> -->
+      </section>
+      <section>
+        <picture></picture>
+        <div>
+          <h2>LO TUYO ES UNA STORE OFFICE</h2>
+          <p>
+            EcoParkCenter es un Moderno y Seguro Condominio de Bodegas +
+            Showroom + Oficinas Premium que se entregan 100% habilitadas para el
+            almacenamiento y funcionamiento de actividades productivas
+            acreditadas como INOFENSIVAS por el Servicio de Salud. EcoParkCenter
+            está ubicado en la mejor zona industrial de Quilicura con
+            conectividad directa a Panamerica Norte, apunta a empresas que
+            buscan optimizar sus procesos en un mismo espacio; facilitando la
+            integración de la gestión comercial, administrativa y logística de
+            Última Milla. Los módulos van desde los 350 a 490 m2 con oficinas
+            desde 60 m2 habilitadas con buen estándar de terminaciones para una
+            fácil instalación y operación inmediata.
+          </p>
+          A
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2>SEGURIDAD Y VIGILANCIA</h2>
+          <p>
+            La seguridad es un factor fundamental para el óptimo funcionamiento
+            de las empresas, por lo que hemos incorporado equipamiento de alto
+            estandar, sistemas de disuación y prevención de última generación.
+            Es un condominio cerrado con muro perimetral con contención y cerco
+            eléctrico, cámaras de monitoreo y sistemas antialunizaje.
+          </p>
+        </div>
+        <picture></picture>
+      </section>
+      <section>
+        <picture></picture>
+      </section>
+      <section>
+        <div>
+          <div>
+            <p>Nos mueve la eficiencia, la simpleza y la eficacia</p>
+            <p>
+              En nuestros espacios además encontrarás terminaciones de primer
+              nivel, seguridad de última tecnología y diseños optimizados para
+              un alto rendimiento.
+            </p>
+          </div>
+          <div>
+            <p>ELIGE TU BODEGA</p>
+            <li>BODEGA 1</li>
+            <li>BODEGA 2, 4, 6</li>
+            <li>BODEGA 3 y 5</li>
+            <li>BODEGA 7</li>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p id="nombre_bodega"></p>
+            <p>SUPERFICIE BODEGA 3</p>
+            <p id="superficie_bodega"></p>
+            <p>SUPERFICIE OFICINAS</p>
+            <p id="superficie_oficina"></p>
+            <p>SUPERFICIE TOTAL</p>
+            <p id="superficie_TOTAL"></p>
+            <a href="#" class="btn-cotiza">COTIZA AQUÍ</a>
+          </div>
+          <div>
+            <picture></picture>
+          </div>
+        </div>
+      </section>
+      <section>
+        <picture></picture>
+        <div>
+          <p>MAPA DE CONECTIVIDAD</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js" type="module"></script>
   </body>
 </html>
