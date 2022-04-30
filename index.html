@@ -44,11 +44,15 @@
             <span></span>
 
             <ul id="menu">
-              <a class="menu__servicios" href="#"><li>PROYECTO</li></a>
-              <a class="menu__servicios" href="#"><li>SEGURIDAD</li></a>
-              <a class="menu__servicios" href="#"><li>PLANTAS</li></a>
-              <a class="menu__servicios" href="#"><li>UBICACIÓN</li></a>
-              <a class="menu__servicios" href="#" class="btn-cotiza"
+              <a class="menu__servicios" href="#app"><li>PROYECTO</li></a>
+              <a class="menu__servicios" href="#seguridad"
+                ><li>SEGURIDAD</li></a
+              >
+              <a class="menu__servicios" href="#plantas"><li>PLANTAS</li></a>
+              <a class="menu__servicios" href="#ubicacion"
+                ><li>UBICACIÓN</li></a
+              >
+              <a class="menu__servicios" href="#app" class="btn-cotiza"
                 >COTIZA AQUÍ</a
               >
             </ul>
@@ -56,11 +60,11 @@
         </nav>
       </div>
       <nav class="header__menu">
-        <a class="servicios" href="#">PROYECTO</a>
-        <a class="servicios" href="#">SEGURIDAD</a>
-        <a class="servicios" href="#">PLANTAS</a>
-        <a class="servicios" href="#">UBICACIÓN</a>
-        <a href="#" class="btn-cotiza">COTIZA AQUÍ</a>
+        <a class="servicios" href="#app">PROYECTO</a>
+        <a class="servicios" href="#seguridad">SEGURIDAD</a>
+        <a class="servicios" href="#plantas">PLANTAS</a>
+        <a class="servicios" href="#ubicacion">UBICACIÓN</a>
+        <a href="#app" class="btn-cotiza">COTIZA AQUÍ</a>
       </nav>
     </header>
     <main>
@@ -116,7 +120,7 @@
               necesitas.
             </p>
           </div>
-          <div class="caracteristica__item">
+          <div class="caracteristica__item icon3">
             <img src="assets/images_ecopark/ic-f3.svg" alt="" />
             <h3>
               ARQUITECTURA <br />
@@ -134,7 +138,7 @@
           <h2>DESDE 350 A 490 M2</h2>
           <form class="form__cotiza" action="">
             <div class="form__group">
-              <label for="nombre"> Nombre y Apellido</label>
+              <label for="nsombre"> Nombre y Apellido</label>
               <input type="text" required name="nombre" />
             </div>
             <div class="form__group">
@@ -158,66 +162,175 @@
                 <option value="bodega7">Bodega 7</option>
               </select>
             </div>
-            <a href="#" class="btn-cotiza">COTIZA AQUÍ</a>
+            <button type="submit" class="btn-cotiza">COTIZA AQUÍ</button>
+            <!-- <a href="#" type="submit" class="btn-cotiza">COTIZA AQUÍ</a> -->
           </form>
         </div>
       </section>
-      <section>
-        <p>
-          Necesitas una oficina, un showroom y una bodega para tu negocio. Todo
-          eso EcoparkCenter lo tiene en un solo lugar para que comiences ahora
-          mismo. Un espacio privado con las ventajas y seguridad de una gran
-          empresa que se ajusta a lo que necesites.
-        </p>
-        <!-- <img src="assets/images_ecopark/ser1.png" alt="" /> -->
-      </section>
-      <section>
-        <picture></picture>
-        <div>
-          <h2>LO TUYO ES UNA STORE OFFICE</h2>
+      <section class="servicios__section grid1">
+        <div class="servicios__items">
           <p>
-            EcoParkCenter es un Moderno y Seguro Condominio de Bodegas +
-            Showroom + Oficinas Premium que se entregan 100% habilitadas para el
-            almacenamiento y funcionamiento de actividades productivas
-            acreditadas como INOFENSIVAS por el Servicio de Salud. EcoParkCenter
-            está ubicado en la mejor zona industrial de Quilicura con
-            conectividad directa a Panamerica Norte, apunta a empresas que
-            buscan optimizar sus procesos en un mismo espacio; facilitando la
-            integración de la gestión comercial, administrativa y logística de
-            Última Milla. Los módulos van desde los 350 a 490 m2 con oficinas
-            desde 60 m2 habilitadas con buen estándar de terminaciones para una
-            fácil instalación y operación inmediata.
+            Necesitas una oficina, un showroom y una bodega para tu negocio.
+            Todo eso EcoparkCenter lo tiene en un solo lugar para que comiences
+            ahora mismo. Un espacio privado con las ventajas y seguridad de una
+            gran empresa que se ajusta a lo que necesites.
           </p>
-          A
+          <picture>
+            <source
+              media="(max-width:640px)"
+              srcset="/assets/images_ecopark/ser1-mobile.png"
+            />
+            <img src="/assets/images_ecopark/ser1.png" alt="" />
+          </picture>
         </div>
-      </section>
-      <section>
-        <div>
-          <h2>SEGURIDAD Y VIGILANCIA</h2>
-          <p>
-            La seguridad es un factor fundamental para el óptimo funcionamiento
-            de las empresas, por lo que hemos incorporado equipamiento de alto
-            estandar, sistemas de disuación y prevención de última generación.
-            Es un condominio cerrado con muro perimetral con contención y cerco
-            eléctrico, cámaras de monitoreo y sistemas antialunizaje.
-          </p>
-        </div>
-        <picture></picture>
-      </section>
-      <section>
-        <picture></picture>
-      </section>
-      <section>
-        <div>
+        <div class="servicios__items grid2">
+          <picture>
+            <source
+              media="(max-width:640px)"
+              srcset="/assets/images_ecopark/ser2-mobile.png"
+            />
+            <img src="/assets/images_ecopark/ser2.png" alt="" />
+          </picture>
           <div>
-            <p>Nos mueve la eficiencia, la simpleza y la eficacia</p>
+            <h2>LO TUYO ES UNA STORE OFFICE</h2>
+
+            <p>
+              EcoParkCenter es un Moderno y Seguro Condominio de Bodegas +
+              Showroom + Oficinas Premium que se entregan 100% habilitadas para
+              el almacenamiento y funcionamiento de actividades productivas
+              acreditadas como INOFENSIVAS por el Servicio de Salud.
+            </p>
+
+            <p>
+              EcoParkCenter está ubicado en la mejor zona industrial de
+              Quilicura con conectividad directa a Panamerica Norte, apunta a
+              empresas que buscan optimizar sus procesos en un mismo espacio;
+              facilitando la integración de la gestión comercial, administrativa
+              y logística de Última Milla.
+            </p>
+
+            <p>
+              Los módulos van desde los 350 a 490 m2 con oficinas desde 60 m2
+              habilitadas con buen estándar de terminaciones para una fácil
+              instalación y operación inmediata.
+            </p>
+          </div>
+        </div>
+        <div class="servicios__items grid3" id="seguridad">
+          <div>
+            <h2>SEGURIDAD Y VIGILANCIA</h2>
+            <p>
+              La seguridad es un factor fundamental para el óptimo
+              funcionamiento de las empresas, por lo que hemos incorporado
+              equipamiento de alto estandar, sistemas de disuación y prevención
+              de última generación. Es un condominio cerrado con muro perimetral
+              con contención y cerco eléctrico, cámaras de monitoreo y sistemas
+              antialunizaje.
+            </p>
+          </div>
+          <picture>
+            <source
+              media="(max-width:640px)"
+              srcset="/assets/images_ecopark/ser3-mobile.png"
+            />
+            <img src="/assets/images_ecopark/ser3.png" alt="" />
+          </picture>
+        </div>
+      </section>
+      <section class="bodegas" id="plantas">
+        <picture>
+          <source
+            media="(max-width:640px)"
+            srcset="/assets/images_ecopark/bodega1-mobile.jpg"
+          />
+          <img src="/assets/images_ecopark/bodega.jpg" alt="" />
+        </picture>
+        <div class="parte parte1">
+          <span>1</span>
+          <div class="text">Red húmeda</div>
+        </div>
+        <div class="parte parte2">
+          <span>2</span>
+          <div class="text">Sensor humo y alarma incendio</div>
+        </div>
+        <div class="parte parte3">
+          <span>3</span>
+          <div class="text">Portón levante motorizado</div>
+        </div>
+        <div class="parte parte4">
+          <span>4</span>
+          <div class="text">Energía Trifásica y Breaker Eléctrico</div>
+        </div>
+        <div class="parte parte5">
+          <span>5</span>
+          <div class="text">Sistema Ventilación natural</div>
+        </div>
+        <div class="parte parte6">
+          <span>6</span>
+          <div class="text">Citófono a portería</div>
+        </div>
+        <div class="parte parte7">
+          <span>7</span>
+          <div class="text">Iluminación natural (plancha traslúcida)</div>
+        </div>
+        <div class="parte parte8">
+          <span>8</span>
+          <div class="text">Iluminación led</div>
+        </div>
+        <div class="parte parte9">
+          <span>9</span>
+          <div class="text">Cubierta techo y muros con aislación térmica</div>
+        </div>
+        <div class="parte parte10">
+          <span>10</span>
+          <div class="text">Muros divisorios entre bodegas RF60</div>
+        </div>
+        <div class="parte parte11">
+          <span>11</span>
+          <div class="text">Pavimentos radier pulido alto tráfico</div>
+        </div>
+        <div class="parte parte12">
+          <span>12</span>
+          <div class="text">Muro perimetral exterior hormigón 1,4 mt</div>
+        </div>
+        <div class="parte parte13">
+          <span>13</span>
+          <div class="text">
+            <h4>Oficinas 100% Habilitadas</h4>
+            <p>
+              - Puerta acceso principal oficinas de vidrio templado tipo Protex
+              con manillón de acero inoxidabe
+              <br />
+              - Baño con ducha/camarín
+              <br />
+              - Baño oficinas
+              <br />
+              - Kitchennette
+              <br />
+              - Termo eléctrico 100 lts
+              <br />
+              - Porcelanato en oficina y baños 1º nivel; Vinílico en 2º nivel
+              <br />
+              - Cielo americano segundo piso
+            </p>
+          </div>
+        </div>
+        <div class="parte parteh">
+          <span>h</span>
+          <div class="text">Altura libre 9 mts</div>
+        </div>
+      </section>
+      <!-- <section class="bodegas__section">
+        <div class="bodegas__izq">
+          <div class="bodegas__texto">
+            <h3>Nos mueve la eficiencia, la simpleza y la eficacia</h3>
             <p>
               En nuestros espacios además encontrarás terminaciones de primer
               nivel, seguridad de última tecnología y diseños optimizados para
               un alto rendimiento.
             </p>
           </div>
-          <div>
+          <div class="bodegas__tipo">
             <p>ELIGE TU BODEGA</p>
             <li>BODEGA 1</li>
             <li>BODEGA 2, 4, 6</li>
@@ -225,8 +338,8 @@
             <li>BODEGA 7</li>
           </div>
         </div>
-        <div>
-          <div>
+        <div class="bodegas__der">
+          <div class="bodegas__info">
             <p id="nombre_bodega"></p>
             <p>SUPERFICIE BODEGA 3</p>
             <p id="superficie_bodega"></p>
@@ -236,17 +349,17 @@
             <p id="superficie_TOTAL"></p>
             <a href="#" class="btn-cotiza">COTIZA AQUÍ</a>
           </div>
-          <div>
-            <picture></picture>
+          <div class="bodegas__img">
+            <picture>
+              <source
+                media="(max-width:640px)"
+                srcset="/assets/images_ecopark/bodega1-mobile.png"
+              />
+              <img src="/assets/images_ecopark/bodega1.png" alt="" />
+            </picture>
           </div>
         </div>
-      </section>
-      <section>
-        <picture></picture>
-        <div>
-          <p>MAPA DE CONECTIVIDAD</p>
-        </div>
-      </section>
+      </section> -->
     </main>
 
     <script src="app.js" type="module"></script>
